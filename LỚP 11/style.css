@@ -1,0 +1,227 @@
+:root {
+    --bg-navbar: #DEE6E9;   
+    --text-color: #75909C;  
+    --accent-color: #9FB5C4;
+
+.navbar { 
+    position: sticky !important; 
+    top: 0; 
+    width: 100%; 
+    z-index: 9999; 
+    background-color: var(--bg-navbar); 
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.menu {
+    display: flex !important;       
+    flex-direction: row !important; 
+    justify-content: center;        
+    list-style: none !important;   
+    margin: 0;
+    padding: 0;
+}
+
+.menu > li {
+    position: relative;
+    margin: 0 15px;                 
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
+
+
+.sub_menu {
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    background-color: var(--accent-color);
+    list-style: none;
+    min-width: 150px;
+    display: none; /* Mặc định ẩn */
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.sub_menu li a {
+    color: white;
+    font-size: 16px;
+    padding: 8px 15px;
+}
+
+
+.menu li:hover .sub_menu {
+    display: block !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-left: 0 !important; 
+}
+footer {
+    background-color: #75909C; 
+    color: white;              
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+
+.row {
+    display: flex;            
+    justify-content: space-around; /* Chia đều khoảng cách giữa các cột */
+    align-items: flex-start;  /* Căn các cột bắt đầu từ phía trên */
+    max-width: 1200px;        /* Giới hạn độ rộng footer để không bị quá loãng */
+    margin: 0 auto;           /* Căn giữa toàn bộ footer */
+    flex-wrap: wrap;          
+}
+
+.col {
+    flex: 1;                  /* Mỗi cột chiếm tỉ lệ bằng nhau */
+    padding: 0 20px;          /* Tạo khoảng cách hai bên cho chữ không dính nhau */
+    min-width: 250px;         /* Đảm bảo khi thu nhỏ màn hình, các cột không bị quá hẹp */
+}
+
+/* Chỉnh một chút cho các thành phần bên trong */
+.col h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #9FB5C4; /* Thêm gạch chân màu xanh nhạt cho tiêu đề */
+    display: inline-block;
+}
+
+.footer__contact a, .footer__heading--p2 p {
+    color: #DEE6E9;           /* Màu chữ xanh rất nhạt */
+    text-decoration: none;
+    line-height: 1.8;         /* Tăng khoảng cách dòng cho dễ đọc */
+}
+
+.dinh {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Chỉnh cái Form góp ý cho đẹp */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: #9FB5C4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #DEE6E9;
+    color: #75909C;
+}
+.full-width-banner {
+    width: 100%;       /* Chiều rộng tràn màn hình */
+    height: 50%;      /* Tự động chỉnh chiều cao để không bị méo ảnh */
+    display: block;    /* Xóa khoảng hở nhỏ dưới ảnh */
+}
+/* --- CSS CHO BỐ CỤC MỚI --- */
+
+/* 1. Phần Hero (Home) */
+.hero-section {
+    padding: 60px 0;
+    background-color: #ffffff; /* Hoặc màu #E6E6E6 nếu bà muốn nền xám nhẹ */
+}
+
+.hero-container {
+    display: flex;             /* Dàn hàng ngang */
+    justify-content: center;   /* Căn giữa */
+    align-items: center;
+    gap: 80px;                 /* Khoảng cách giữa chữ và ảnh */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text h1 {
+    font-size: 70px;
+    color: #75909C;           /* Màu xanh đậm nhất */
+    margin: 0;
+}
+
+.hero-image img {
+    width: 450px;             /* Kích thước ảnh lớp 1 */
+    border: 3px solid #75909C; /* Khung ảnh đậm cho giống bản vẽ */
+    border-radius: 5px;
+}
+
+/* 2. Đường kẻ ngăn cách */
+.divider {
+    border: 0;
+    border-top: 2px solid #75909C;
+    margin: 20px 100px;       /* Đẩy lùi hai đầu đường kẻ vào chút cho đẹp */
+}
+
+/* 3. Phần About */
+.about-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-box-title {
+    display: inline-block;
+    border: 2px solid #75909C; /* Cái hộp tiêu đề */
+    padding: 10px 40px;
+    font-weight: bold;
+    color: #75909C;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-image img {
+    width: 400px;             /* Kích thước ảnh lớp 2 */
+    border: 2px solid #9FB5C4;
+}
+
+.about-content {
+    text-align: left;         /* Chữ căn lề trái như bà viết tay */
+    max-width: 450px;
+    color: #75909C;
+    line-height: 1.6;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar .menu li:nth-child(1) a,
+.navbar .menu li:nth-child(2) a {
+    font-weight: 400;
+}
+.hero-text h1 {
+    font-weight: 400;
+}
+.about-box-title {
+    font-weight: 400;
+}
+#about {
+    scroll-margin-top: 100px;
+}
