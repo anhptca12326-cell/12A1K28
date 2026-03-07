@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+input {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.schoolyear {
+    font-size: 23px;
+    font-family: 'Agbalumo';
+}
+.column img{
+    
+    opacity: 0;
+    animation: floatIn 1s cubic-bezier(.21,.98,.6,1.15) forwards;
+    border-radius:25px;
+}
+
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+.overlay-text {font-family: 'Agbalumo'; color: white; margin-top: 10px; margin-bottom: 10px}
+
+@font-face {
+    font-family: 'Agbalumo'; 
+    src: url('Agbalumo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+footer {
+            background: #75909C;
+            color: white;
+            background-image: url(footer.jpg);
+            background-size: cover;
+            font-family: Montserrat Alternates;
+            padding: 20px 0;
+        }
+        
+        .footer {
+            margin-left: 10px;
+            padding: 10px ;
+            justify-content: space-between;
+            position: relative;
+        }
+        
+        .contact {
+            color: white;
+            font-size: 18px;
+            line-height: 1;
+        }
+        
+        .lienhe {
+            font-size: 18px;
+            font-family: 'Montserrat';
+            font-weight: bold;
+            color:white;
+        }
+        
+        .contact a {
+            text-decoration: none;
+            color: white;
+            line-height: 0.5;
+            justify-content: space-evenly;
+            font-size: 20px;
+        }
+        
+        .roww {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        
+        .coll {
+            flex-basis: 30%;
+            padding: 10px;
+            line-height: 1.2;
+        }
+        
+         .coll h2{
+           font-family: Montserrat;
+        }
+        .footer h4{
+           font-family: Agbalumo;
+        }
+.title-column .class-title {
+    font-size: 40px; 
+    margin: 0;
+}
+.header {
+        background-color: #75909C;
+        font-family: 'Agbalumo';
+        margin: 0px;
+      
+        text-align: center;
+        padding-top: 10px
+    }
+.overlay-text {
+    margin-top: 5px;    
+    font-size: 17px;
+}
+.navbar { 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    background-color: #043F5C; 
+    padding: 10px 0;
+    width: 100%; 
+}
+
+.nav-menu {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0; 
+    padding: 0;
+    list-style: none; 
+    width: 100%;
+}
+
+.nav-menu > li {
+    position: relative;
+    margin: 0 25px; 
+}
+
+.nav-menu a {
+    text-decoration: none; 
+    color: white;
+    font-size: 18px;
+    font-weight: 550;
+    transition: all 0.3s ease;
+    font-family: "Montserrat";
+}
+.nav-menu a::after {content: "";position: absolute;left: 0;bottom: -6px; width: 0;height: 2px;background-color: white;transition: width 0.3s ease;}
+.nav-menu a:hover::after {width: 100%;}
+.dropdown-menu {position: absolute;top: 45px;left: 50%; transform: translateX(-50%) translateY(10px);background-color: #043F5C;padding: 10px 0;;min-width: 150px;border-radius: 10px;visibility: hidden;transition: all 0.35s ease;}
+.dropdown-menu li {text-align: center;}
+.dropdown-menu a {display: block;padding: 10px 18px;font-size: 18px;}
+.dropdown-menu a:hover {background-color: rgba(255, 255, 255, 0.18);border-radius: 6px;}
+.dropdown:hover .dropdown-menu {opacity: 1;visibility: visible;transform: translateX(-50%) translateY(0);}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-padding-top: 70px; 
+    scroll-behavior: smooth;
+}
+
+
+body
+  {margin: 0;
+  background-color: #DEE6E9;}
+
+.subpage-container 
+  {width: 80%;
+  margin: 40px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;}
+
+  
+.menu{width:100%;
+      background:white;
+      text-align:center;
+      padding:12px 0;
+      position:sticky;
+      top:0;
+      z-index:1000;}
+
+.menu a{color:#75909C;
+        text-decoration:none;
+        margin:0 20px;
+        padding:10px 16px;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight:600;
+        font-size:20px;
+        transition:0.3s ease;}
+
+.menu a:hover{background:#75909C;
+              color:white;
+              text-decoration:underline;}
+
+  h1 {color: #75909C;
+      font-family: "Agbalumo", system-ui;
+      font-weight: 400;
+      font-style: normal;}
+
+   h2 {color: #9FB5C4;
+      margin-bottom: 20px;
+      font-family: "Montserrat Alternates", sans-serif;
+      font-weight: 600;
+      font-style: normal;}
+
+
+  p {line-height: 1.6;
+    margin-bottom: 40px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;}
+
+  img {display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  margin-bottom: 20px}
+
+  .row {
+  display: flex;            
+  flex-wrap: nowrap;        
+  align-items: center;      
+  justify-content: space-around; 
+}
+
+.column {
+  text-align: center;       
+}
+
+.column img {
+  border-radius: 30px;      
+  object-fit: cover; 
+  display: block;     
+  margin: 0 auto;       
+}
+
+.back-btn 
+  {display: inline-block;
+  margin: 20px 10%;
+  padding: 8px 16px;
+  background-color: white;
+  color: #75909C;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 14px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;}
