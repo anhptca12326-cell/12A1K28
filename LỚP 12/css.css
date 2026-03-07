@@ -1,0 +1,190 @@
+.row {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.column {
+    
+    width: 20%;
+    padding: 5px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-column .class-title {
+    font-size: 40px; 
+    margin: 0;
+}
+@font-face {
+    font-family: 'Agbalumo'; 
+    src: url('Agbalumo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.region {padding:20px; border-style: hidden;}
+.header {
+        background-color: #75909C;
+        font-family: 'Agbalumo';
+        margin: 0px;
+        padding: 60px 20px;
+        text-align: center;
+    }
+.overlay-text {font-family: 'Agbalumo'; color: white;}
+.class-title {
+    font-size: 58px;
+    font-family: 'Agbalumo';
+}
+.schoolyear {
+    font-size: 23px;
+    font-family: 'Agbalumo';
+}
+.column img{
+    
+    opacity: 0;
+    animation: floatIn 1s cubic-bezier(.21,.98,.6,1.15) forwards;
+    border-radius:25px;
+}
+
+
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.
+* {box-sizing: border-box;}
+body {margin: 0;}
+.navbar { 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    background-color: #043F5C; 
+    padding: 10px 0;
+    width: 100%; 
+}
+
+.nav-menu {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0; 
+    padding: 0;
+    list-style: none; 
+    width: 100%;
+}
+
+.nav-menu > li {
+    position: relative;
+    margin: 0 25px; 
+}
+
+.nav-menu a {
+    text-decoration: none; 
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    font-family: "Montserrat";
+}
+.nav-menu a::after {content: "";position: absolute;left: 0;bottom: -6px; width: 0;height: 2px;background-color: white;transition: width 0.3s ease;}
+.nav-menu a:hover::after {width: 100%;}
+.dropdown-menu {position: absolute;top: 45px;left: 50%; transform: translateX(-50%) translateY(10px);background-color: #043F5C;padding: 10px 0;;min-width: 150px;border-radius: 10px;visibility: hidden;transition: all 0.35s ease;}
+.dropdown-menu li {text-align: center;}
+.dropdown-menu a {display: block;padding: 10px 18px;font-size: 18px;}
+.dropdown-menu a:hover {background-color: rgba(255, 255, 255, 0.18);border-radius: 6px;}
+.dropdown:hover .dropdown-menu {opacity: 1;visibility: visible;transform: translateX(-50%) translateY(0);}
+/* --- FOOTER --- */
+footer {
+            background: #75909C;
+            color: white;
+            background-image: url(footer.jpg);
+            background-size: cover;
+            font-family: Montserrat;
+            padding: 20px 0;
+        }
+        
+        .footer {
+            margin-left: 10px;
+            padding: 10px ;
+            justify-content: space-between;
+            position: relative;
+        }
+        
+        .contact {
+            color: white;
+            font-size: 18px;
+            line-height: 1;
+        }
+        
+        .lienhe {
+            font-size: 18px;
+            font-family: 'Montserrat';
+            font-weight: bold;
+            color:white;
+        }
+        
+        .contact a {
+            text-decoration: none;
+            color: white;
+            line-height: 0.5;
+            justify-content: space-evenly;
+            font-size: 20px;
+        }
+        
+        .roww {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        
+        .coll {
+            flex-basis: 30%;
+            padding: 10px;
+            line-height: 1.2;
+        }
+        
+         .coll h2{
+           font-family: Montserrat;
+        }
+        .footer h4{
+           font-family: Agbalumo;
+        }
+textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+input {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family: 'Montserrat'; 
+    src: url('Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+html {
+    scroll-padding-top: 70px; 
+    scroll-behavior: smooth;
+}

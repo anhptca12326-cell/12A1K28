@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    color: #4a4a4a;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px; 
+    margin: 0 auto;
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.header-content {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 40px 20px;
+}
+
+.sub-header {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.9rem;
+    color: #8da4b1;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.header-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem; 
+    color: #5d747f;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.header-content h1 span {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #8da4b1;
+    display: block;
+    font-size: 1.8rem; 
+    margin-top: 5px;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: #d1d9e6;
+    margin: 20px auto;
+}
+
+
+.guide-section {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 1px solid rgba(255,255,255,0.5);
+    transition: transform 0.3s ease;
+}
+
+.guide-section:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 15px 40px rgba(93, 116, 127, 0.1);
+}
+
+.intro-card {
+    text-align: center;
+    border-left: 5px solid #8da4b1; 
+}
+
+
+.row-layout {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.row-layout.reverse {
+    flex-direction: row-reverse;
+}
+
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h2, .text-content h3 {
+    font-family: 'Playfair Display', serif;
+    color: #5d747f;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.text-content h3 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.text-content p {
+    font-size: 15px;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+.travel-note {
+    background: #eef2f5;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #5d747f;
+    font-style: italic;
+}
+
+
+.image-wrapper {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border: 8px solid #fff; 
+    filter: sepia(0.15);
+    transition: all 0.4s ease;
+}
+
+.image-wrapper:hover img {
+    filter: sepia(0);
+    transform: scale(1.02);
+}
+
+.caption {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #888;
+    font-style: italic;
+}
+
+
+.mini-gallery {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.mini-gallery h3 {
+    font-family: 'Playfair Display', serif;
+    color: #5d747f;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.grid-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.strip-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.strip-item:hover img {
+    transform: translateY(-10px);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .header-content h1 { font-size: 2.5rem; }
+    
+    .row-layout, .row-layout.reverse {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .grid-strip {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .guide-section {
+        padding: 25px;
+    }
+}
+
+
+.destination-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-left: none; 
+    border: 2px dashed #8da4b1; 
+    position: relative;
+    padding: 30px 50px;
+    background: white;
+}
+
+.badge-icon {
+    font-size: 3rem;
+    background: #f0f4f8;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+.destination-card .label {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #8da4b1;
+    font-weight: 700;
+}
+
+.destination-card h2 {
+    margin: 5px 0 15px 0;
+    color: #5d747f;
+}
+
+.trip-info {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+
+.mini-gallery {
+    margin-top: 100px;
+    padding: 0 10px;
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.gallery-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #8da4b1;
+}
+
+
+.grid-strip {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+}
+
+.strip-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    background: white;
+    padding: 15px; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.strip-item img {
+    width: 100%
+    height 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}   
+
+.strip-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+    .grid-strip {
+        grid-template-columns: 1fr; 
+    }
+    .trip-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .destination-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .strip-item img {
+        height: 300px; 
+    }
+}
