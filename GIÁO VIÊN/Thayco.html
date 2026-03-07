@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Thầy cô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header"> 
+    <div class="row">
+        <div class="column">
+           <img src="uutu.jpg" style="opacity: 0.9" width="200" height="200" >
+            <div class="overlay-text" style="color: #F5F5F5">Ưu tú</div>
+        </div>
+        <div class="column">
+           <img src="banlinh.jpg" style="opacity: 0.9" width="200" height="200" >
+            <div class="overlay-text" style="color: #F5F5F5">Bản lĩnh</div>
+        </div>
+        <div class="column">
+           <img src="noluc.jpg" style="opacity: 0.9" width="200" height="200" >
+            <div class="overlay-text" style="color: #F5F5F5">Nỗ lực</div>
+        </div>
+        <div class="column">
+           <img src="doanket.jpg" style="opacity: 0.9" width="200" height="200">
+            <div class="overlay-text" style="color: #F5F5F5">Đoàn kết</div>
+        </div>
+        <div class="column title-column">
+            <h1 class="class-title" style="color:#F5F5F5;">12A1-K28</h1>
+            <p class="schoolyear" style="color: #F5F5F5;">Niên khóa: 2023-2026</p>
+        </div>
+    </div>
+</header>
+    <nav class="navbar">
+    <ul class="nav-menu">
+        <li><a href="../TRANG CHỦ/index.html">Trang chủ</a></li>
+        <li><a href="../TRANG CHỦ/index.html#about">Giới thiệu</a></li>
+        <li><a href="../THÀNH VIÊN/draft.html">Thành viên lớp</a></li>
+        <li><a href="../GIÁO VIÊN/Thayco.html">Giáo viên</a></li>
+        <li class="dropdown">
+            <a href="#journey">Mốc hành trình</a>
+            <ul class="dropdown-menu">
+                <li><a href="../LỚP 10/index.html">Lớp 10</a></li>
+                <li><a href="../LỚP 11/web.html">Lớp 11</a></li>
+                <li><a href="../LỚP 12/index.html">Lớp 12</a></li>
+            </ul>
+        </li>
+        <li><a href="#contact">Liên hệ</a></li>
+    </ul></nav>
+    <h1 class="tieude" id="thayco">
+        Những thầy cô đã đồng hành cùng lớp trong ba năm qua
+    </h1>
+
+    <div class="content-container">
+        <h2 class="demuc">LỚP 10</h2>
+        <div class="slider-wrapper">
+            <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slider-container">
+                <div class="thanhtruot" id="thanhtruot">
+                    <div onclick="hien('a10', this)" class="khungan"><p>Thầy Nhân<br>Chủ nhiệm</p></div>
+                    <div onclick="hien('b10', this)" class="khungan"><p>Cô Minh<br>Tiếng anh</p></div>
+                    <div onclick="hien('c10', this)" class="khungan"><p>Thầy Khoa<br>Toán học</p></div>
+                    <div onclick="hien('d10', this)" class="khungan"><p>Cô Giàu<br>Toán học</p></div>
+                    <div onclick="hien('e10', this)" class="khungan"><p>Thầy Quốc<br>Vật lý</p></div>
+                    <div onclick="hien('f10', this)" class="khungan"><p>Thầy Danh<br>Hóa học</p></div>
+                    <div onclick="hien('g10', this)" class="khungan"><p>Cô Duyên<br>Ngữ văn</p></div>
+                    <div onclick="hien('h10', this)" class="khungan"><p>Thầy Suyền<br>Tin học</p></div>
+                    <div onclick="hien('i10', this)" class="khungan"><p>Cô Đào<br>Lịch sử</p></div>
+                    <div onclick="hien('j10', this)" class="khungan"><p>Thầy Dũng<br>Địa lý</p></div>
+                    <div onclick="hien('k10', this)" class="khungan"><p>Thầy Phương<br>KTPL</p></div>
+                    <div onclick="hien('l10', this)" class="khungan"><p>Thầy Thái<br>Công nghệ</p></div>
+                    <div onclick="hien('m10', this)" class="khungan"><p>Thầy Khang<br>Thể dục</p></div>
+                    <div onclick="hien('n10', this)" class="khungan"><p>Thầy Sơn<br>GDQP</p></div>
+                </div>
+            </div>
+            <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+                    <div id="a10" class="khunghien active"><img class="anhhien" src="Thầy Nhân.jpg"><p>Giáo viên <b>Quản Quốc Nhân</b><br><br><b>Giáo viên chủ nhiệm</b><br>Phụ trách bộ môn <b>Tiếng trung</b><br>Thầy cởi mở và tận tâm, thấu hiểu tâm lý học sinh<br>Thầy từng viết thư động viên gửi từng bạn trong lớp, mỗi bạn là một lời nhắn riêng biệt</p></div>
+                    <div id="b10" class="khunghien hidden"><img class="anhhien" src="Cô Minh.jpg"><p>Giáo viên <b>Phan Thị Quế Minh</b><br><br>Phụ trách bộ môn <b>Tiếng anh</b><br>Cô đã dạy ở Hùng Vương từ năm 2014<br>Cô vui vẻ, hài hước và gây dấu ấn với những bài kiểm tra bùng nổ cảm xúc<br>Lớp nợ cô nhiều lời cám ơn, cô nợ lớp một con cua hoàng đế<p></div>
+                    <div id="c10" class="khunghien hidden"><img class="anhhien" src="Thầy Khoa.jpg"><p>Giáo viên <b>Lê Phan Đăng Khoa</b><br><br>Phụ trách bộ môn <b>Toán học</b><br>Thầy nghiêm túc, giảng bài nhẹ nhàng và dễ hiểu<br>Thầy là chủ nhân đằng sau đề Toán 'mười câu vận dụng cao' gây ám ảnh cả một thế hệ học sinh</p></div>
+                    <div id="d10" class="khunghien hidden"><img class="anhhien" src="Cô Giàu.jpg"><p>Giáo viên <b>Trần Tôn Nữ Ngọc Giàu</b><br><br>Phụ trách bộ môn <b>Toán học</b><br>Cô nhiệt tình, giải bài tập kĩ càng và không ngại giải đáp thắc mắc của học sinh<br>Cô sở hữu kĩ năng viết thượng thừa, sau một lần nhặt bút, bảng đen đã thành bảng trắng</p></div>
+                    <div id="e10" class="khunghien hidden"><img class="anhhien" src="Thầy Quốc.jpg"><p>Giáo viên <b>Trần Võ Nam Quốc</b><br><br>Phụ trách bộ môn <b>Vật lý</b><br>Thầy đã dạy ở Hùng Vương từ năm 2017<br>Thầy hài hước, truyền đạt dễ hiểu giúp bài học trở nên sinh động cho mấy con báo<br>"Sau một ngày học tập căng thẳng thì cứ lấy Lý ra làm."</p></div>
+                    <div id="f10" class="khunghien hidden"><img class="anhhien" src="Thầy Danh.jpg"><p>Giáo viên <b>Nguyễn Thành Danh</b><br><br>Phụ trách bộ môn <b>Hóa học</b><br>Thầy giảng bài chậm rãi và dễ hiểu, sẵn sàng nhắc lại nhiều lần phần học sinh chưa hiểu<br>"Nãy giờ viết cũng kha khá rồi ha? Yên tâm đi còn nhiều phương trình lắm."</p></div>
+                    <div id="g10" class="khunghien hidden"><img class="anhhien" src="Cô Duyên.jpg"><p>Giáo viên <b>Nguyễn Phương Duyên</b><br><br>Phụ trách bộ môn <b>Ngữ văn</b><br>Cô giảng bài nhiệt huyết, dễ hiểu<br>"Mai lớp mình sẽ có một cô vô cùng xinh đẹp dễ thương dạy Tri thức ngữ văn bài chín."</p></div>
+                    <div id="h10" class="khunghien hidden"><img class="anhhien" src="Thầy Suyền.jpg"><p>Giáo viên <b>Tôn Thất Suyền</b><br><br>Phụ trách bộ môn <b>Tin học</b><br>Thầy dạy tập trung vào phần cốt lõi của vấn đề, đánh giá cao sự sáng tạo<br>Đôi lúc thầy cảm thấy quan ngại với tính hướng nội đáng kinh ngạc của lớp</p></div>
+                    <div id="i10" class="khunghien hidden"><img class="anhhien" src="Cô Đào.jpg"><p>Giáo viên <b>Bùi Thị Đào</b><br><br>Phụ trách bộ môn <b>Lịch sử</b><br>Cô nghiêm túc, phân tích bài giảng chi tiết, dạy học theo lối kể chuyện lôi cuốn<br>Cô toát ra vẻ uy nghiêm, khiến âm thanh duy nhất nghe được trong tiết Sử năm đó là tiếng thở</p></div>
+                    <div id="j10" class="khunghien hidden"><img class="anhhien" src="Thầy Dũng.jpg"><p>Giáo viên <b>Lê Quốc Dũng</b><br><br>Phụ trách bộ môn <b>Địa lý</b><br>Thầy nghiêm túc, đòi hỏi sự tập trung cao độ từ học sinh<br>Thầy dạy học sinh cách ứng dụng những công nghệ tiên tiến nhất vào học tập và đời sống một cách hiệu quả</p></div>
+                    <div id="k10" class="khunghien hidden"><img class="anhhien" src="Thầy Phương.jpg"><p>Giáo viên <b>Lý Hoàng Phương</b><br><br>Phụ trách bộ môn <b>Kinh tế pháp luật</b><br>Thầy không dạy gói gọn trong sách mà mở rộng nhiều kiến thức thực tiễn, tạo không khí thoải mái trong lớp học<br>"Lựa cho thầy mấy bạn đi thi học sinh giỏi đi."</p></div>
+                    <div id="l10" class="khunghien hidden"><img class="anhhien" src="Thầy Thái.jpg"><p>Giáo viên <b>Đinh Quốc Thái</b><br><br>Phụ trách bộ môn <b>Công nghệ</b><br>Thầy giảng bài sâu sắc, đi vào những kiến thức trọng tâm<br>"Đề mở nhé mấy em."</p></div>
+                    <div id="m10" class="khunghien hidden"><img class="anhhien" src="Thầy Khang.jpg"><p>Giáo viên <b>Nguyễn Duy Khang</b><br><br>Phụ trách bộ môn <b>Thể dục</b><br>Thầy dạy tận tình, chỉ dẫn động tác dễ hiểu<br>Thầy thân thiện và hài hước, không ngại tham gia vào những trò vui của lớp</p></div>
+                    <div id="n10" class="khunghien hidden"><img class="anhhien" src="Thầy Sơn.jpg"><p>Giáo viên <b>Nguyễn Thanh Sơn</b><br><br>Phụ trách bộ môn <b>Giáo dục quốc phòng</b><br>Thầy đã dạy ở Hùng Vương từ năm 2003<br>Thầy luôn đảm bảo một phong cách dạy nhất quán "Làm nhanh, làm chậm có phân tích"<br>"Năm ngón tay khép kín, em nào sáu ngón khép luôn."</p></div>
+            </div>
+    </div>
+    <br>
+    <div class="content-container">
+         <h2 class="demuc">Lớp 11</h2>
+        <div class="slider-wrapper">
+            <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slider-container">
+                <div class="thanhtruot" id="thanhtruot">
+                    <div onclick="hien('a11', this)" class="khungan"><p>Thầy Danh<br>Chủ nhiệm</p></div>
+                    <div onclick="hien('b11', this)" class="khungan"><p>Cô Thường<br>Tiếng anh</p></div>
+                    <div onclick="hien('c11', this)" class="khungan"><p>Cô Bình<br>Toán học</p></div>
+                    <div onclick="hien('d11', this)" class="khungan"><p>Thầy Minh<br>Toán học</p></div>
+                    <div onclick="hien('e11', this)" class="khungan"><p>Cô Oanh<br>Vật lý</p></div>
+                    <div onclick="hien('f11', this)" class="khungan"><p>Cô Mai<br>Ngữ văn</p></div>
+                    <div onclick="hien('g11', this)" class="khungan"><p>Thầy Suyền<br>Tin học</p></div>
+                    <div onclick="hien('h11', this)" class="khungan"><p>Cô Diệp<br>Lịch sử</p></div>
+                    <div onclick="hien('i11', this)" class="khungan"><p>Cô Hằng<br>Địa lý</p></div>
+                    <div onclick="hien('j11', this)" class="khungan"><p>Cô Châu<br>KTPL</p></div>
+                    <div onclick="hien('k11', this)" class="khungan"><p>Thầy Cường<br>Công nghệ</p></div>
+                    <div onclick="hien('l11', this)" class="khungan"><p>Cô Trúc<br>Thể dục</p></div>
+                    <div onclick="hien('m11', this)" class="khungan"><p>Thầy Sơn<br>GDQP</p></div>
+                </div>
+            </div>
+            <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+                    <div id="a11" class="khunghien active"><img class="anhhien" src="Thầy Danh.jpg"><p>Giáo viên <b>Nguyễn Thành Danh</b><br><br><b>Giáo viên chủ nhiệm</b><br>Phụ trách bộ môn <b>Hóa học</b><br>Thầy giảng bài chậm rãi và dễ hiểu, sẵn sàng nhắc lại nhiều lần phần học sinh chưa hiểu<br>"Nãy giờ viết cũng kha khá rồi ha? Yên tâm đi còn nhiều phương trình lắm."</p></div>
+                    <div id="b11" class="khunghien hidden"><img class="anhhien" src="Cô Thường.jpg"><p>Giáo viên <b>Huỳnh Thị Mộng Thường</b><br><br>Phụ trách bộ môn <b>Tiếng anh</b><br>Cô đã dạy ở Hùng Vương từ năm 2004<br>Cô vui vẻ, thân thiện, đề cao tinh thần tự học của học sinh<p></div>
+                    <div id="c11" class="khunghien hidden"><img class="anhhien" src="Cô Bình.jpg"><p>Giáo viên <b>Hoàng Hải Bình</b><br><br>Phụ trách bộ môn <b>Toán học</b><br>Cô giảng bài chi tiết, dễ hiểu<br>Cô chủ nhiệm lớp một khoảng thời gian ngắn trong học kì I, hỗ trợ lớp nhiệt tình trong các hoạt động phong trào</p></div>
+                    <div id="d11" class="khunghien hidden"><img class="anhhien" src="Thầy Minh.jpg"><p>Giáo viên <b>Đoàn Lê Minh</b><br><br>Phụ trách bộ môn <b>Toán học</b><br>Thầy đã dạy ở Hùng Vương từ năm 2024<br>Thầy giảng bài dễ hiểu, dạy cách áp dụng kiến thức đã học ở những bài tập mở rộng.<br>"Ai làm hết được cuốn này thầy cho mười điểm."</p></div>
+                    <div id="e11" class="khunghien hidden"><img class="anhhien" src="Cô Oanh.jpg"><p>Giáo viên <b>Lê Ngọc Như Oanh</b><br><br>Phụ trách bộ môn <b>Vật lý</b><br>Cô đã dạy ở Hùng Vương từ năm 2015<br>Cô giảng bài chậm rãi, tạo không khí thoải mái<br>Cô quan tâm nhiều đến sức khỏe học sinh, một ngày nhắc các bánh bao ăn no ngủ kĩ không dưới hai lần</p></div>
+                    <div id="f11" class="khunghien hidden"><img class="anhhien" src="Cô Mai.jpg"><p>Giáo viên <b>Phạm Trúc Mai</b><br><br>Phụ trách bộ môn <b>Ngữ Văn</b><br>Cô đã dạy ở Hùng Vương từ năm 2015<br>Cô dùng thơ văn để giảng bài, khơi gợi sức sáng tạo<br>Cô mang quyết tâm nhớ mặt gọi tên tất cả các bé, động viên và khuyến khích học sinh tự tin hơn</p></div>
+                    <div id="g11" class="khunghien hidden"><img class="anhhien" src="Thầy Suyền.jpg"><p>Giáo viên <b>Tôn Thất Suyền</b><br><br>Phụ trách bộ môn <b>Tin học</b><br>Thầy dạy tập trung vào phần cốt lõi của vấn đề, đánh giá cao sự sáng tạo<br>Đôi lúc thầy cảm thấy quan ngại với tính hướng nội đáng kinh ngạc của lớp</p></div>
+                    <div id="h11" class="khunghien hidden"><img class="anhhien" src="Cô Diệp.jpg"><p>Giáo viên <b>Lê Thị Diệp</b><br><br>Phụ trách bộ môn <b>Lịch sử</b><br>Cô giảng bài cuốn hút, kết hợp với hình ảnh và video kể chuyện để giúp bài học thêm sinh động<br>"Đang xem mà cứ quảng cáo."<br>"Tuần sau cô cho xem tiếp."</p></div>
+                    <div id="i11" class="khunghien hidden"><img class="anhhien" src="Cô Hằng.jpg"><p>Giáo viên <b>Hoàng Thị Kim Hằng</b><br><br>Phụ trách bộ môn <b>Địa lý</b><br>Cô dạy nhẹ nhàng, dễ hiểu<br>"Đi Đà Lạt về làm bài thu hoạch nha mấy đứa."</p></div>
+                    <div id="j11" class="khunghien hidden"><img class="anhhien" src="Cô Châu.jpg"><p>Giáo viên <b>Ngô Bảo Châu</b><br><br>Phụ trách bộ môn <b>Kinh tế pháp luật</b><br>Cô không bó buộc kiến thức, đưa ra nhiều tình huống thực tế để học sinh xử lí và áp dụng những điều đã học<br>Cô tổ chức nhiều trò chơi thú vị có liên quan đến bài giảng, dùng bánh tráng trộn làm phần thưởng</p></div>
+                    <div id="k11" class="khunghien hidden"><img class="anhhien" src="Thầy Cường.jpg"><p>Giáo viên <b>Võ Văn Cường</b><br><br>Phụ trách bộ môn <b>Công nghệ</b><br>Thầy đem nhiều kiến thức mới lạ vào bài học<br>Học sinh gọi thầy với cái tên thân thương "Tony Cường"</p></div>
+                    <div id="l11" class="khunghien hidden"><img class="anhhien" src="Cô Trúc.jpg"><p>Giáo viên <b>Lê Trần Thanh Trúc</b><br><br>Phụ trách bộ môn <b>Thể dục</b><br>Cô đã dạy ở Hùng Vương từ năm 2005<br>"Thấp trọng tâm xuống."<br>"Nghỉ xíu đi rồi ra chạy tùy sức năm phút."</p></div>
+                    <div id="m11" class="khunghien hidden"><img class="anhhien" src="Thầy Sơn.jpg"><p>Giáo viên <b>Nguyễn Thanh Sơn</b><br><br>Phụ trách bộ môn <b>Giáo dục quốc phòng</b><br>Thầy đã dạy ở Hùng Vương từ năm 2003<br>Thầy luôn đảm bảo một phong cách dạy nhất quán "Làm nhanh, làm chậm có phân tích"<br>"Năm ngón tay khép kín, em nào sáu ngón khép luôn."</p></div>
+            </div>
+    </div>
+    <div class="content-container">
+         <h2 class="demuc">Lớp 12</h2>
+        <div class="slider-wrapper">
+            <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slider-container">
+                <div class="thanhtruot" id="thanhtruot">
+                    <div onclick="hien('a12', this)" class="khungan"><p>Cô Oanh<br>Chủ nhiệm</p></div>
+                    <div onclick="hien('b12', this)" class="khungan"><p>Cô Hiền<br>Tiếng anh</p></div>
+                    <div onclick="hien('c12', this)" class="khungan"><p>Cô Dung<br>Tiếng anh</p></div>
+                    <div onclick="hien('d12', this)" class="khungan"><p>Cô Trang<br>Toán học</p></div>
+                    <div onclick="hien('e12', this)" class="khungan"><p>Cô Hà<br>Hóa học</p></div>
+                    <div onclick="hien('f12', this)" class="khungan"><p>Cô Mai<br>Ngữ văn</p></div>
+                    <div onclick="hien('g12', this)" class="khungan"><p>Thầy Suyền<br>Tin học</p></div>
+                    <div onclick="hien('h12', this)" class="khungan"><p>Cô Hạnh<br>Lịch sử</p></div>
+                    <div onclick="hien('i12', this)" class="khungan"><p>Thầy Tuấn<br>Địa lý</p></div>
+                    <div onclick="hien('j12', this)" class="khungan"><p>Thầy Phương<br>KTPL</p></div>
+                    <div onclick="hien('k12', this)" class="khungan"><p>Thầy Cường<br>Công nghệ</p></div>
+                    <div onclick="hien('l12', this)" class="khungan"><p>Cô Trúc<br>Thể dục</p></div>
+                    <div onclick="hien('m12', this)" class="khungan"><p>Thầy Sơn<br>GDQP</p></div>
+                </div>
+            </div>
+            <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>        
+        <br>
+        <br>
+        <br>
+        <div>
+                    <div id="a12" class="khunghien active"><img class="anhhien" src="Cô Oanh.jpg"><p>Giáo viên <b>Lê Ngọc Như Oanh</b><br><br><b>Giáo viên chủ nhiệm</b><br>Phụ trách bộ môn <b>Vật lý</b><br>Cô đã dạy ở Hùng Vương từ năm 2015<br>Cô giảng bài chậm rãi, tạo không khí thoải mái<br>Cô quan tâm nhiều đến sức khỏe học sinh, một ngày nhắc các bánh bao ăn no ngủ kĩ không dưới hai lần</p></div>
+                    <div id="b12" class="khunghien hidden"><img class="anhhien" src="Cô Hiền.jpg"><p>Giáo viên <b>Vũ Thị Thu Hiền</b><br><br>Phụ trách bộ môn <b>Tiếng anh</b><br>Cô đã dạy ở Hùng Vương từ năm 2012<br>Cô vui vẻ, hài hước, để học sinh tự giải thích để nhớ bài lâu<br>Cô không gọi cá nhân mỗi học sinh lên bảng, mà dùng: "Anh em Kiên Minh", "Ba chị em Phương Thư", "Xóm nhà lá bên này",...<p></div>
+                    <div id="c12" class="khunghien hidden"><img class="anhhien" src="Cô Dung.jpg"><p>Giáo viên <b>Nguyễn Thị Ngọc Dung</b><br><br>Phụ trách bộ môn <b>Tiếng anh</b><br>Cô đã dạy ở Hùng Vương từ năm 2016<br>Cô vui vẻ, thân thiện, khuyến khích tinh thần học tập của học sinh<br>"Ráng lấy giải thành phố nha mấy đứa."</p></div>
+                    <div id="d12" class="khunghien hidden"><img class="anhhien" src="Cô Trang.jpg"><p>Giáo viên <b>Thân Thị Phương Trang</b><br><br>Phụ trách bộ môn <b>Toán học</b><br>Cô đã dạy ở Hùng Vương từ năm 2012<br>Cô không chỉ dạy mà còn truyền cảm hứng, dùng con số tô vẽ cuộc sống thường ngày<br>"Các em có biết điều này có nghĩa là gì không?"</p></div>
+                    <div id="e12" class="khunghien hidden"><img class="anhhien" src="Cô Hà.jpg"><p>Giáo viên <b>Lê Thu Hà</b><br><br>Phụ trách bộ môn <b>Hóa học</b><br>Cô đã dạy ở Hùng Vương từ năm 2013<br>Cô giảng bài kĩ, tập trung vào phần kiến thức trọng tâm<br>"Phần này dễ mấy đứa tự đọc nhe."</p></div>
+                    <div id="f12" class="khunghien hidden"><img class="anhhien" src="Cô Mai.jpg"><p>Giáo viên <b>Phạm Trúc Mai</b><br><br>Phụ trách bộ môn <b>Ngữ Văn</b><br>Cô đã dạy ở Hùng Vương từ năm 2015<br>Cô dùng thơ văn để giảng bài, khơi gợi sức sáng tạo<br>Cô mang quyết tâm nhớ mặt gọi tên tất cả các bé, động viên và khuyến khích học sinh tự tin hơn</p></div>
+                    <div id="g12" class="khunghien hidden"><img class="anhhien" src="Thầy Suyền.jpg"><p>Giáo viên <b>Tôn Thất Suyền</b><br><br>Phụ trách bộ môn <b>Tin học</b><br>Thầy dạy tập trung vào phần cốt lõi của vấn đề, đánh giá cao sự sáng tạo<br>Đôi lúc thầy cảm thấy quan ngại với tính hướng nội đáng kinh ngạc của lớp</p></div>
+                    <div id="h12" class="khunghien hidden"><img class="anhhien" src="Cô Hạnh.jpg"><p>Giáo viên <b>Huỳnh Hông Hạnh</b><br><br>Phụ trách bộ môn <b>Lịch sử</b><br>Cô đã dạy ở Hùng Vương từ năm 2003<br>Với vốn kiến thức rộng lớn, cô giảng bài dễ hiểu, phân tích và nhấn mạnh những phần quan trọng<br>Cô nói chuyện nhẹ nhàng, thoải mái với học sinh<br>"Rồi, quên mất phần này rồi."</p></div>
+                    <div id="i12" class="khunghien hidden"><img class="anhhien" src="Thầy Tuấn.jpg"><p>Giáo viên <b>Lê Anh Tuấn</b><br><br>Phụ trách bộ môn <b>Địa lý</b><br>Thầy không chỉ dạy trong sách giáo khoa mà truyền đạt kiến thức bên ngoài, luôn cập nhật và theo sát thực tế địa lý<br>"Việt Nam hiện nay có bao nhiêu tỉnh?"</p></div>
+                    <div id="j12" class="khunghien hidden"><img class="anhhien" src="Thầy Phương.jpg"><p>Giáo viên <b>Lý Hoàng Phương</b><br><br>Phụ trách bộ môn <b>Kinh tế pháp luật</b><br>Thầy không dạy gói gọn trong sách mà mở rộng nhiều kiến thức thực tiễn, tạo không khí thoải mái trong lớp học<br>"Lựa cho thầy mấy bạn đi thi học sinh giỏi đi."</p></div>
+                    <div id="k12" class="khunghien hidden"><img class="anhhien" src="Thầy Cường.jpg"><p>Giáo viên <b>Võ Văn Cường</b><br><br>Phụ trách bộ môn <b>Công nghệ</b><br>Thầy đem nhiều kiến thức mới lạ vào bài học<br>Học sinh gọi thầy với cái tên thân thương "Tony Cường"</p></div>
+                    <div id="l12" class="khunghien hidden"><img class="anhhien" src="Cô Trúc.jpg"><p>Giáo viên <b>Lê Trần Thanh Trúc</b><br><br>Phụ trách bộ môn <b>Thể dục</b><br>Cô đã dạy ở Hùng Vương từ năm 2005<br>"Thấp trọng tâm xuống."<br>"Nghỉ xíu đi rồi ra chạy tùy sức năm phút."</p></div>
+                    <div id="m12" class="khunghien hidden"><img class="anhhien" src="Thầy Sơn.jpg"><p>Giáo viên <b>Nguyễn Thanh Sơn</b><br><br>Phụ trách bộ môn <b>Giáo dục quốc phòng</b><br>Thầy đã dạy ở Hùng Vương từ năm 2003<br>Thầy luôn đảm bảo một phong cách dạy nhất quán "Làm nhanh, làm chậm có phân tích"<br>"Năm ngón tay khép kín, em nào sáu ngón khép luôn."</p></div>
+
+            </div>
+    </div>
+    <script src="sc.js"></script>
+        <h1 class="tieude" id="kiniem">
+        Kỉ niệm cùng thầy cô
+        </h1>
+    <div class="bocuc">
+        <div class="khunganh"><a class="linkanh" href="file:///D:/Web/Th%E1%BA%A7y%20C%C6%B0%E1%BB%9Dng%2020-11.jpg"><img src="Thầy Cường 20-11.jpg"></a><p>Ảnh Nhà giáo Việt Nam cùng thầy Cường</p></div>
+        <div class="khunganh"><a class="linkanh" href="file:///D:/Web/Th%E1%BA%A7y%20D%C5%A9ng%20T%E1%BA%BFt.jpg"><img src="Thầy Dũng Tết.jpg"></a><p>Ảnh chúc mừng năm mới cùng thầy Dũng</p></div>
+        <div class="khunganh"><a class="linkanh" href="file:///D:/Web/C%C3%B4%20Trang%20%C4%90%C3%A0%20L%E1%BA%A1t.jpg"><img src="Cô Trang Đà Lạt.jpg"></a><p>Ảnh Đà Lạt cùng cô Trang</p></div>
+    </div>
+    <div class="bocuc">
+        <div class="khunganh"><a class="linkanh" href="file:///D:/Web/Th%E1%BA%A7y%20Suy%E1%BB%81n%20gi%E1%BA%A3ng%20b%C3%A0i.mp4"><video src="Thầy Suyền giảng bài.mp4" controls></video></a><p>Thầy Suyền giảng bài cho lớp</p></div>
+        <div class="khunganh"><a class="linkanh" href="file:///D:/Web/Th%E1%BA%A7y%20Qu%E1%BB%91c%20%C4%90%C3%A0%20L%E1%BA%A1t.jpg"><img src="Thầy Quốc Đà Lạt.jpg"></a><p>Ảnh Đà Lạt cùng thầy Quốc</p></div>
+        <div class="khunganh"><a class="linkanh" href="file:///D:/Web/C%C3%B4%20Dung%2020-11.jpg"><img src="Cô Dung 20-11.jpg"></a><p>Ảnh Nhà giáo Việt Nam cùng cô Dung</p></div>
+    </div>
+    <div class="bocuc">
+        <div class="khunganh"><a class="linkanh" href="file:///D:/Web/Th%E1%BA%A7y%20Danh%2019-11.jpg"><img src="Thầy Danh 19-11.jpg"></a><p>Ảnh Quốc tế Đàn ông cùng thầy Danh</p></div>
+        <div class="khunganh"><a class="linkanh" href="file:///D:/Web/C%C3%B4%20Minh%208-3.jpg"><img src="Cô Minh 8-3.jpg"></a><p>Ảnh Quốc tế Phụ nữ cùng cô Minh</p></div>
+        <div class="khunganh"><a class="linkanh" href="file:///D:/Web/C%C3%B4%20Oanh%2020-10.jpg"><img src="Cô Oanh 20-10.jpg"></a><p>Ảnh Phụ nữ Việt Nam cùng cô Oanh</p></div>
+    </div>
+    <div class="bocuc">
+        <div class="khunganh"><a class="linkanh" href="file:///D:/Web/Th%E1%BA%A7y%20Nh%C3%A2n%20%C4%91%E1%BA%A7u%20n%C4%83m.jpg"><img src="Thầy Nhân đầu năm.jpg"></a><p>Ảnh nhập học cùng thầy Nhân</p></div>
+        <div class="khunganh"><a class="linkanh" href="file:///D:/Web/Th%E1%BA%A7y%20Danh%20%C4%90%C3%A0%20L%E1%BA%A1t.mp4"><video src="Thầy Danh Đà Lạt.mp4" controls></video></a><p>Lớp đi Đà Lạt cùng thầy Danh</p></div>
+        <div class="khunganh"><a class="linkanh" href="file:///D:/Web/C%C3%B4%20Tr%C3%BAc%2020-11.jpg"><img src="Cô Trúc 20-11.jpg"></a><p>Ảnh Nhà giáo Việt Nam cùng cô Trúc</p></div>
+    </div>
+    <div class="bocuc">
+        <div class="khunganh"><a class="linkanh" href="file:///D:/Web/C%C3%B4%20Hi%E1%BB%81n%20trao%20gi%E1%BA%A3i.jpg"><img src="Cô Hiền trao giải.jpg"></a><p>Cô Hiền trao giải Hùng biện Tiếng anh cho các bạn</p></div>
+        <div class="khunganh"><a class="linkanh" href="file:///D:/Web/C%C3%B4%20Oanh%20G%C4%90TH.jpg"><img src="Cô Oanh GĐTH.jpg"></a><p>Ảnh chụp cùng cô Oanh hậu Giai điệu tuổi hồng</p></div>
+        <div class="khunganh"><a class="linkanh" href="file:///D:/Web/C%C3%B4%20Th%C6%B0%E1%BB%9Dng%2020-11.jpg"><img src="Cô Thường 20-11.jpg"></a><p>Ảnh Nhà giáo Việt Nam cùng cô Thường</p></div>
+    </div>
+      <footer >
+        <div class="footer" id="contact">
+            <h4><i>Thank you for visiting our website! Moah <3!</i></h4>
+            <div class="contact">
+                
+                <div class="roww">
+                    <div class="coll">
+                        <h2>Thông tin liên hệ:</h2><br>
+                        <div class="contact">
+                            <a href="https://www.facebook.com/share/1JvQJEDeUx/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"><label class="lienhe">  12AntiSociety1 - những sinh vật thiếu ngủ</label></i>
+                            </a>
+                        </div>
+                        <br>
+                        
+                    </div>
+            
+                    <div class="coll">
+                        <h2>Tâm sự với chúng tôi:</h2>
+                        <br>
+                        <form action="trangcamon.html" method="POST">
+                            <label class="lienhe">Thông tin liên hệ (email, Facebook,...):<br><br> <input type="text" name="thongtin"></label>
+                            
+                            <br>
+                            <br>
+                            <label class="lienhe">Tâm thư: <br><br><textarea name = "ykien" rows = "3" cols = "30"></textarea></label>
+                            
+                            <br>
+                            <input type="submit" name="submit" value="Gửi" style="background-color:#fff">
+                        </form>
+                    </div>
+                </div>
+                <script src="https://kit.fontawesome.com/cf0f31fa2c.js " crossorigin="anonymous"></script>
+    </footer>
+</body>
+</html>
