@@ -630,3 +630,68 @@ html {
     scroll-padding-top: 70px; 
     scroll-behavior: smooth;
 }
+
+/* --- LỚP PHỦ NỀN ĐEN --- */
+.popup-overlay {
+    display: none; /* Ẩn đi mặc định */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- KHUNG NỘI DUNG POPUP --- */
+.popup-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    animation: hienLen 0.3s ease-out;
+    width: 90%; /* Dành cho giao diện điện thoại, popup sẽ chiếm 90% màn hình */
+    max-width: 600px; /* Trên màn hình máy tính, popup sẽ không phình to quá 600px */
+    max-height: 80vh; /* Giới hạn chiều cao tối đa bằng 80% chiều cao màn hình hiển thị (Viewport Height) */
+    overflow-y: auto; /* Quan trọng nhất: Tự động hiển thị thanh cuộn dọc nếu nội dung bên trong bị dài quá khung */
+}
+
+@keyframes hienLen {
+    from {opacity: 0; transform: translateY(-30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Nút tắt X */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #666;
+    transition: 0.2s;
+}
+.close-btn:hover { color: #e74c3c; }
+
+/* Định dạng chữ và ảnh trong Popup */
+.popup-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%; /* Bo tròn ảnh */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #f1c40f; /* Viền màu vàng trang trí */
+}
+.popup-role { color: #7f8c8d; font-size: 16px; margin-bottom: 5px; font-style: italic; }
+.popup-name { color: #2c3e50; font-size: 24px; font-weight: bold; margin-bottom: 15px; }
+.popup-desc { color: #555; font-size: 15px; line-height: 1.5; }
+
+/* Thêm hiệu ứng con trỏ chuột khi hover vào các thành viên */
+.member, .member1 { cursor: pointer; transition: transform 0.2s; }
+.member:hover, .member1:hover { transform: scale(1.05); }
